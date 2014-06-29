@@ -1,6 +1,6 @@
 {
   "name": "the-closer",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "./lib/the-closer",
   "description": "Closes the window when or after the last tab is closed. Doesn't ask any questions.",
   "homepage": "https://github.com/izuzak/atom-the-closer",
