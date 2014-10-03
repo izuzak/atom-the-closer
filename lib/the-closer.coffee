@@ -1,8 +1,10 @@
 hadNoPanes = false
 
 module.exports =
-  configDefaults:
-    closeWindowTogetherWithLastTab: true
+  config:
+    closeWindowTogetherWithLastTab:
+      type: 'boolean'
+      default: true
 
   activate: ->
     hadNoPanes = atom.workspace.getEditors().length == 0
