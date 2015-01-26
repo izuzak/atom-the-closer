@@ -8,6 +8,6 @@
   "bugs": "https://github.com/izuzak/atom-the-closer/issues",
   "license": "MIT",
   "engines": {
-    "atom": "*"
+    "atom": ">=0.174.0, <2.0.0"
   }
 }
