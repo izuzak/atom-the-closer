@@ -10,7 +10,8 @@ module.exports =
       default: true
 
   activate: ->
-    hadNoPanes = atom.workspace.getEditors().length == 0
+    hadNoPanes = atom.workspace.getPanes().length == 1 and
+       atom.workspace.getPanes()[0].getItems().length == 0
 
     disposables = new CompositeDisposable
 
