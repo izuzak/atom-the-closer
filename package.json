@@ -9,5 +9,10 @@
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
-  }
+  },
+  "keywords": [
+    "tabs",
+    "autoclose",
+    "window"
+  ]
 }
