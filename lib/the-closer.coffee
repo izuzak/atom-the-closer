@@ -19,7 +19,7 @@ module.exports =
       if atom.workspace.getPanes().length == 1 and
          atom.workspace.getPanes()[0].getItems().length == 0
         if atom.config.get('the-closer.closeWindowTogetherWithLastTab')
-          hadNoPanes = true
+          atom.close()
         else
           process.nextTick => hadNoPanes = true
 
