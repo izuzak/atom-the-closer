@@ -8,7 +8,7 @@
   "bugs": "https://github.com/izuzak/atom-the-closer/issues",
   "license": "MIT",
   "engines": {
-    "atom": ">=0.174.0 <2.0.0"
+    "atom": ">=1.17.0 <2.0.0"
   },
   "keywords": [
     "tabs",
