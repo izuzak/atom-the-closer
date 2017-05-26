@@ -10,14 +10,16 @@ module.exports =
       default: true
 
   activate: ->
-    hadNoPanes = atom.workspace.getPanes().length == 1 and
-       atom.workspace.getPanes()[0].getItems().length == 0
+    hasAnyPanes = =>
+      return atom.workspace.getPanes().length == 4 and
+        atom.workspace.getPanes()[0].getItems().length == 0;
+
+    hadNoPanes = hasAnyPanes()
 
     disposables = new CompositeDisposable
 
     itemRemovedCallback = =>
-      if atom.workspace.getPanes().length == 1 and
-         atom.workspace.getPanes()[0].getItems().length == 0
+      if hasAnyPanes()
         if atom.config.get('the-closer.closeWindowTogetherWithLastTab')
           atom.close()
         else
